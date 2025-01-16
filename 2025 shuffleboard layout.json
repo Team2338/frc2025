@@ -236,19 +236,6 @@
               "Colors/Color when false": "#8B0000FF"
             }
           },
-          "8,3": {
-            "size": [
-              1,
-              1
-            ],
-            "content": {
-              "_type": "Text View",
-              "_source0": "network_table:///Shuffleboard/FRC2024/Positions/Wrist",
-              "_title": "Wrist",
-              "_glyph": 148,
-              "_showGlyph": false
-            }
-          },
           "4,3": {
             "size": [
               1,
@@ -279,6 +266,57 @@
               "Visuals/Starting angle": 180.0,
               "Visuals/Show tick mark ring": true,
               "Visuals/Counter clockwise": false
+            }
+          },
+          "9,2": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Number Slider",
+              "_source0": "network_table:///SmartDashboard/Index %",
+              "_title": "Index %",
+              "_glyph": 148,
+              "_showGlyph": false,
+              "Slider Settings/Min": 0.0,
+              "Slider Settings/Max": 1.0,
+              "Slider Settings/Block increment": 0.0625,
+              "Visuals/Display value": true,
+              "Visuals/Orientation": "HORIZONTAL"
+            }
+          },
+          "10,2": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Number Slider",
+              "_source0": "network_table:///SmartDashboard/Shoot %",
+              "_title": "Shoot %",
+              "_glyph": 148,
+              "_showGlyph": false,
+              "Slider Settings/Min": 0.0,
+              "Slider Settings/Max": 1.0,
+              "Slider Settings/Block increment": 0.0625,
+              "Visuals/Display value": true,
+              "Visuals/Orientation": "HORIZONTAL"
+            }
+          },
+          "8,3": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Boolean Box",
+              "_source0": "network_table:///SmartDashboard/\u003e0.5",
+              "_title": "\u003e0.5",
+              "_glyph": 148,
+              "_showGlyph": false,
+              "Colors/Color when true": "#7CFC00FF",
+              "Colors/Color when false": "#8B0000FF"
             }
           }
         }
