@@ -191,21 +191,6 @@
               "_showGlyph": false
             }
           },
-          "10,3": {
-            "size": [
-              1,
-              1
-            ],
-            "content": {
-              "_type": "Boolean Box",
-              "_source0": "network_table:///Shuffleboard/SmartDashboard/Motor Temp",
-              "_title": "Motor Temp",
-              "_glyph": 148,
-              "_showGlyph": false,
-              "Colors/Color when true": "#FF0000FF",
-              "Colors/Color when false": "#00FF00FF"
-            }
-          },
           "4,0": {
             "size": [
               1,
@@ -268,42 +253,6 @@
               "Visuals/Counter clockwise": false
             }
           },
-          "9,2": {
-            "size": [
-              1,
-              1
-            ],
-            "content": {
-              "_type": "Number Slider",
-              "_source0": "network_table:///SmartDashboard/Index %",
-              "_title": "Index %",
-              "_glyph": 148,
-              "_showGlyph": false,
-              "Slider Settings/Min": 0.0,
-              "Slider Settings/Max": 1.0,
-              "Slider Settings/Block increment": 0.0625,
-              "Visuals/Display value": true,
-              "Visuals/Orientation": "HORIZONTAL"
-            }
-          },
-          "10,2": {
-            "size": [
-              1,
-              1
-            ],
-            "content": {
-              "_type": "Number Slider",
-              "_source0": "network_table:///SmartDashboard/Shoot %",
-              "_title": "Shoot %",
-              "_glyph": 148,
-              "_showGlyph": false,
-              "Slider Settings/Min": 0.0,
-              "Slider Settings/Max": 1.0,
-              "Slider Settings/Block increment": 0.0625,
-              "Visuals/Display value": true,
-              "Visuals/Orientation": "HORIZONTAL"
-            }
-          },
           "8,3": {
             "size": [
               1,
@@ -313,6 +262,39 @@
               "_type": "Boolean Box",
               "_source0": "network_table:///SmartDashboard/\u003e0.5",
               "_title": "\u003e0.5",
+              "_glyph": 148,
+              "_showGlyph": false,
+              "Colors/Color when true": "#7CFC00FF",
+              "Colors/Color when false": "#8B0000FF"
+            }
+          },
+          "9,2": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Number Slider",
+              "_source0": "network_table:///2338-dashboard/Shoot %",
+              "_title": "/2338-dashboard/Shoot %",
+              "_glyph": 148,
+              "_showGlyph": false,
+              "Slider Settings/Min": -1.0,
+              "Slider Settings/Max": 1.0,
+              "Slider Settings/Block increment": 0.0625,
+              "Visuals/Display value": true,
+              "Visuals/Orientation": "HORIZONTAL"
+            }
+          },
+          "10,3": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Boolean Box",
+              "_source0": "network_table:///2338-dashboard/Motor Temp",
+              "_title": "Motor Temp",
               "_glyph": 148,
               "_showGlyph": false,
               "Colors/Color when true": "#7CFC00FF",

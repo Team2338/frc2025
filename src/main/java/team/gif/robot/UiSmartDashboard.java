@@ -21,10 +21,14 @@ public class UiSmartDashboard {
      *  and save file as "YYYY shuffleboard layout.json"
      */
     public UiSmartDashboard() {
+        // create network table and entries for items to be displayed on main dashboard
         networkTable = NetworkTableInstance.getDefault().getTable("2338-dashboard");
         motorTempEntry = networkTable.getEntry("Motor Temp");
         shootPercEntry = networkTable.getEntry("Shoot %");
         indexPercEntry = networkTable.getEntry("Index %");
+
+        // Set initial values for dashboard input fields
+        shootPercEntry.setDefaultDouble(0.5);
     }
 
     /**
@@ -34,6 +38,15 @@ public class UiSmartDashboard {
      *     elevatorPosEntry.setString(String.format("%11.2f", Elevator.getPosition());
      */
     public void updateUI() {
+        // update the 2338 dashboard (i.e. main dashboard) network table entries
         motorTempEntry.setBoolean(Robot.diagnostics.getAnyMotorTempHot());
+    }
+
+    public double getUiShootPerc() {
+        return shootPercEntry.getDouble(0);
+    }
+
+    public double getUiIndexPerc() {
+        return indexPercEntry.getDouble(0);
     }
 }

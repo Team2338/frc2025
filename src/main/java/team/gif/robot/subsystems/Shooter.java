@@ -13,6 +13,7 @@ import edu.wpi.first.wpilibj.shuffleboard.ShuffleboardTab;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import edu.wpi.first.wpilibj2.command.SubsystemBase;
 import team.gif.robot.Constants;
+import team.gif.robot.Robot;
 import team.gif.robot.RobotMap;
 
 public class Shooter extends SubsystemBase {
@@ -39,10 +40,10 @@ public class Shooter extends SubsystemBase {
     }
 
     public void moveIndexerFromShuffleboard() {
-        indexer.set(TalonSRXControlMode.PercentOutput, SmartDashboard.getNumber("Index %", 0));
+        indexer.set(TalonSRXControlMode.PercentOutput, Robot.uiSmartDashboard.getUiIndexPerc());
     }
 
     public void moveFromShuffleboard() {
-        shooter.set(TalonSRXControlMode.PercentOutput, SmartDashboard.getNumber("Shoot %", 0));
+        shooter.set(TalonSRXControlMode.PercentOutput, Robot.uiSmartDashboard.getUiShootPerc());
     }
 }
