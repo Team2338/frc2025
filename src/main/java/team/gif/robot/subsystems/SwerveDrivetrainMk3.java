@@ -416,6 +416,10 @@ public class SwerveDrivetrainMk3 extends SubsystemBase {
         return getPose().getY();
     }
 
+    public double fLDriveTemp() { return fLDriveMotor.getTemp(); }
+    public double fRDriveTemp() { return fRDriveMotor.getTemp(); }
+    public double rLDriveTemp() { return rLDriveMotor.getTemp(); }
+    public double rRDriveTemp() { return rRDriveMotor.getTemp(); }
 
     public void enableShuffleboardDebug(String shuffleboardTabName) {
         ShuffleboardTab shuffleboardTab = Shuffleboard.getTab(shuffleboardTabName);

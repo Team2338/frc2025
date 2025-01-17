@@ -9,6 +9,7 @@ import edu.wpi.first.wpilibj2.command.Command;
 import edu.wpi.first.wpilibj2.command.CommandScheduler;
 import team.gif.lib.LimelightHelpers;
 import team.gif.robot.commands.drivetrainPbot.DriveSwerve;
+import team.gif.robot.subsystems.Diagnostics;
 import team.gif.robot.subsystems.Shooter;
 import team.gif.robot.subsystems.SwerveDrivetrainMk3;
 import team.gif.robot.subsystems.SwerveDrivetrainMk4;
@@ -24,10 +25,11 @@ import com.pathplanner.lib.commands.PathPlannerAuto;
 public class Robot extends TimedRobot {
     private Command autonomousCommand;
 
-    private static RobotContainer robotContainer;
-    public static OI oi;
-    public static UI ui;
-    public static UiSmartDashboard uiSmartDashboard;
+  private static RobotContainer robotContainer;
+  public static Diagnostics diagnostics;
+  public static OI oi;
+  public static UI ui;
+  public static UiSmartDashboard uiSmartDashboard;
 
     //Devices
     public static Pigeon2_0 pigeon;
@@ -54,6 +56,7 @@ public class Robot extends TimedRobot {
         swerveDrive.setDefaultCommand(new DriveSwerve());
         //  swerveDrive = new SwerveDrivetrainMk4();
         shooter= new Shooter();
+        diagnostics = new Diagnostics();
 
         oi = new OI();
         ui = new UI();

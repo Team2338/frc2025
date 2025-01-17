@@ -21,5 +21,11 @@ public class UI {
 
     public UI() {
         ShuffleboardTab shuffleboardTab = Shuffleboard.getTab("FRC 2025");
+        ShuffleboardTab diagnosticsTab = Shuffleboard.getTab("Diagnostics");
+
+        diagnosticsTab.addDouble("Swerve FL temp",Robot.swerveDrive::fLDriveTemp).withWidget(BuiltInWidgets.kTextView).withPosition(0,0);
+        diagnosticsTab.addDouble("Swerve FR temp",Robot.swerveDrive::fRDriveTemp).withWidget(BuiltInWidgets.kTextView).withPosition(1,0);
+        diagnosticsTab.addDouble("Swerve BL temp",Robot.swerveDrive::rLDriveTemp).withWidget(BuiltInWidgets.kTextView).withPosition(0,1);
+        diagnosticsTab.addDouble("Swerve BR temp",Robot.swerveDrive::rRDriveTemp).withWidget(BuiltInWidgets.kTextView).withPosition(1,1);
     }
 }
